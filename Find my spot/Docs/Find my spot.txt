@@ -1,0 +1,17 @@
+Find my spot
+
+Search and access db 
+
+retrive pics from db 
+
+user can upload picture and leave review
+
+user can sign up / login
+
+user can vote and highest rated places will be shown.
+
+List of trending websites to the left of the page
+
+
+
+

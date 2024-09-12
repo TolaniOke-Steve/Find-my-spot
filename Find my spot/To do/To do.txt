@@ -1,0 +1,6 @@
+1) Blend location image with background ->
+
+2) css to adjust cards ->
+
+3) make login page pop (with index blurred behind) up not a whole new page , signup.php
+

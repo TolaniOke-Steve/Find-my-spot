@@ -1,0 +1,182 @@
+#main-text, .navbar bg-body-tertiary, .container{
+    /* header text*/
+    text-align: center;
+    /*color: rgb(12, 5, 62);*/
+    font-family: "Climate Crisis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "YEAR" 1979
+}
+
+.navbar-brand {
+    /*header text-nav*/
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.copyright-text{
+    /* footer copyright text*/
+    text-align: center;
+}
+
+.footer-text{
+    /*footer text --- socials*/
+    text-align: center;
+}
+
+#card-text{
+    /*text card cols*/
+    text-align: center;
+}
+
+#img-btn{
+    /*image header button*/
+    margin-left: 5px;
+    border-radius: 5px;
+    margin-right: -15px;
+}
+
+#footer-btn-img{
+   /*image footer button*/
+   margin-left: 5px;
+   border-radius: 5px; 
+}
+
+#footer-btn{
+    /*footer button*/
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer-index{
+    justify-content: center;
+    display: flex;
+}
+
+#nav-img-1{
+    /*margin icon links*/
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#nav-img-2{
+    /*margin icon links*/
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#nav-img-3{
+    /*margin icon links*/
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#nav-img-4{
+    /*margin icon links*/
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#logo-img{
+    margin-left: 20ox;
+    margin-right: 10px;
+}
+
+#carouselExampleCaptions{
+    /* automatic/manual carousel */
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+body{
+    /*body*/
+    background-color:white;
+}
+
+#srch-btn{
+    /*search button*/
+    padding-right: 10px;
+}
+
+.location-img{
+    /*location image blend*/
+    mix-blend-mode: multiply;
+}
+
+.row {
+    /* cards row adjustments */
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.col {
+    /* cards cols adjustments */
+    padding: 0 2px; 
+    margin: 0; 
+    display: flex;
+    justify-content: center; 
+}
+
+.card {
+    /* cards  adjustments */
+    width: 100%; 
+    max-width: 300px; 
+    margin: 2px 0; 
+    padding: 0; 
+}
+
+.card-img-top {
+    /* image card */
+    height: 200px; 
+    object-fit: cover; 
+    margin: 0; 
+}
+
+.card-body {
+     /* elements inside card */
+    padding: 10px;
+    text-align: center; 
+}
+
+.row-cols-md-3 > .col {
+    /* cols and rows */
+    flex: 0 0 auto; 
+    margin-bottom: 2px; 
+}
+
+.col:first-child {
+    /* first card */
+    margin-right: -150px; 
+}
+
+.col:last-child {
+    /* last card*/
+    margin-left: -150px;
+}
+ 
+#search-bar{
+    /*search block*/
+    margin-left: -50px;
+    margin-right: 15px;
+}  
+
+ #ratings-nav{
+    /* nav block*/
+    margin-right: -70px;
+}
+
