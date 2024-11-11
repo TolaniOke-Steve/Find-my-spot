@@ -116,3 +116,63 @@ section a{
     mix-blend-mode: multiply;
     margin: 3px;
 }
+
+.row {
+    /* cards row adjustments */
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh; 
+    padding: 0; 
+    margin: 0; 
+}
+
+#card-text{
+    /*text card cols*/
+    text-align: center;
+}
+
+.col {
+    /* cards cols adjustments */
+    padding: 0 2px; 
+    margin: 0; 
+    display: flex;
+    justify-content: center; 
+}
+
+.card {
+    /* cards  adjustments */
+    width: 100%; 
+    max-width: 300px; 
+    margin: 2px 0; 
+    padding: 0; 
+    box-shadow: 0px 5px 10px 1px rgba(0,0,0, 0.05);
+}
+
+.card-img-top {
+    /* image card */
+    height: 200px; 
+    object-fit: cover; 
+    margin: 0; 
+}
+
+.card-body {
+     /* elements inside card */
+    padding: 10px;
+    text-align: center; 
+}
+
+.row-cols-md-3 > .col {
+    /* cols and rows */
+    flex: 0 0 auto; 
+    margin-bottom: 2px; 
+}
+
+.col:first-child {
+    /* first card */
+    margin-right: -30px; 
+}
+
+.col:last-child {
+    /* last card*/
+    margin-left: -30px;
+}

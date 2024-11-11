@@ -9,3 +9,5 @@ div.
 4) readjust index page name up top and nav under w box
 
 5) start typr script controls
+
+6) splits -> for account (singip/ signin)
