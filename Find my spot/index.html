@@ -12,178 +12,50 @@
     <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
     </head>
     <body>
-
-        <div id="container">
-            <header id="main">
-                <nav class="navbar bg-body-tertiary">
-                    <div class="container-fluid">
-                      <a class="navbar-brand" href="#">
-                        <h1 id="main-text"> Find my Spot </h1>
-                      </a>
-                    </div>
-                  </nav>
-            </header>           
-        </div>
-
-        <div id="header">
-            <!-- links div -->
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <nav class="navbar bg-body-tertiary">
-                        <div class="container">
-                          <a class="navbar-brand" href="#">
-                            <img src="images/4.jpg" alt="Bootstrap" width="30" height="24" id="img-btn" id="logo-img">
-                          </a>
-                        </div>
-                      </nav>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                      <li class="nav-item" id="trending-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Trending</a>
-                      </li>
-                      <li class="nav-item" id="spots-nav">
-                        <a class="nav-link active" href="#">My spots</a>
-                      </li>
-                      <li class="nav-item" id="Highlights-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Highlights</a>
-                      </li>
-                      <li class="nav-item dropdown" id="ratings-nav">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Ratings
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Lowest</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Highest</a></li>
-                        </ul>
-                      </li>
+      <div class="login-form" id="roboto-regular">
+      <!-- Header -->
+      <div id="container">
+        <header id="main">
+                  <a class="navbar-brand" href="index.html">
+                    <h1 id="main-text"> Find my Spot </h1>
+                  </a>
+                </div>
+        </header>
+        <!-- Navbar -->
+        <div class="navbar-tools">
+          <div class="navbar-right" id="nav-left">
+            <a class="nav-link active" id="Trending" aria-current="page" href="#">Trending</a>
+          <a class="nav-link active" id="Spots" href="#">My spots</a>
+          <a class="nav-link active" id="Highlights" aria-current="page" href="#">Highlights</a>
+          <div class="ratings">
+            <a class="nav-link dropdown-toggle" id="Ratings" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Ratings
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Lowest</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Highest</a></li>
+            </div>
+          </div>
+              <div class="right-navbar-tools" id="right-navbar-tools">
+                <div class="input-box"> 
+                  <input type="text" class="input-field" id="input-box" placeholder="Location" autocomplete="on" required/>
+                  <button class="btn btn-dark" type="submit" id="srch-btn">Search</button>
+                </div>
+                <button class="btn btn-light btn-with-image"> 
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                    <img src="images/6.jpg" alt="img" width="30" height="24" class="location-img">
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Regina</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Saskatoon</a></li>
                     </ul>
-                    <form class="d-flex" role="search" id="search-bar">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-dark" type="submit" id="srch-btn">Search</button>
-                    </form>
-                    <button class="btn btn-light btn-with-image"> 
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                          <img src="images/6.jpg" alt="img" width="30" height="24" class="location-img">
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Regina</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Saskatoon</a></li>
-                          </ul>
-                     </button>
-                  </div>
-                </div>
-              </nav>
-        </div>
-        <div id="right">
-          
-        </div>
-        <br> 
-        <div id="center">
-            <!-- carousel div -->
-            <div id="carouselExampleCaptions" class="carousel slide">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+               </button>
               </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="images/4.jpg" class="d-block w-100" alt="find my spot" height="700">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Find my spot</h5>
-                    <p>Locate and share your favourite places.</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="..." class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="..." class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
-                  </div>
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-        </div>
-
-        <br>
-        <br>
-        <div id="discover">
-          <h5 id="card-text"> Discover More Places</h5>
-          <br>
-            <!-- discover div -->
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-              <div class="col" id="row-1">
-                <div class="card h-100">
-                  <img src="images/stock.png" class="card-img-top" alt="..." height="300">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                    <button type="button" class="btn btn-dark">Read more</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col" id="row-2">
-                <div class="card h-100">
-                  <img src="images/stock.png" class="card-img-top" alt="..." height="300">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                    <button type="button" class="btn btn-dark">Read more</button>                  
-                  </div>
-                </div>
-              </div>
-              <div class="col" id="row-3">
-                <div class="card h-100">
-                  <img src="images/stock.png" class="card-img-top" alt="..." height="300">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                    <button type="button" class="btn btn-dark">Read more</button>                  
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>  
-        <br>
-        <br>
-        <footer id="footer-index">
-            <h5 class="footer-text"> Socials </h5>
-            <br>
-            <!-- icons div -->
-              <div class="container">
-                <a class="navbar-brand" href="#">
-                  <img src="images/icons/insta.jpg" alt="Bootstrap" width="30" height="24" id="nav-img-1" />
-                  <img src="images/icons/tiktok.jpg" alt="Bootstrap" width="30" height="24" id="nav-img-2" />
-                  <img src="images/icons/facebook.jpg" alt="Bootstrap" width="30" height="24" id="nav-img-3" />
-                  <img src="images/icons/youtube.jpg" alt="Bootstrap" width="30" height="24" id="nav-img-4" />
-                </a>
-              </div>
-            <br> 
-            <button type="button" class="btn" id="footer-btn">Find my spot  <img src="images/4.jpg" alt="Bootstrap" width="30" height="24" id="footer-btn-img"/> </button>
-            <br>
-            <br>
-            <br>
-              <p class="copyright-text"> © 2024 find my spot</p>
-        </footer>
+          </div>
+      </div>
     </body>
+
+    
 </html>

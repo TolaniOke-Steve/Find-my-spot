@@ -2,6 +2,10 @@
 
 2) css to adjust cards ->
 
-3) make login page pop (with index blurred behind) up not a whole new page , signup.php
+3) make login page pop (with index blurred behind) up not a whole new page , signup.php -> changed to different pages
 
 div.
+
+4) readjust index page name up top and nav under w box
+
+5) start typr script controls
