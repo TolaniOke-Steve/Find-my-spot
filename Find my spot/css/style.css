@@ -21,6 +21,8 @@ body{
 }
 
 #main-text{
+    /* Header text */
+    margin-top: 3vh;
     text-align: center;
 }
 a{
@@ -200,26 +202,26 @@ section a{
 
 #nav-img-1{
     /*margin icon links*/
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 #nav-img-2{
     /*margin icon links*/
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 #nav-img-3{
     /*margin icon links*/
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 #nav-img-4{
     /*margin icon links*/
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .copyright-text{
