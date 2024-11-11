@@ -176,3 +176,61 @@ section a{
     /* last card*/
     margin-left: -30px;
 }
+
+
+.footer-text{
+    /*footer text --- socials*/
+    text-align: center;
+}
+
+#footer-btn-img{
+    /*image footer button*/
+    margin-left: 5px;
+    border-radius: 5px; 
+ }
+
+ .btn-footer{
+    justify-content: center;
+}
+
+.footer-index{
+    justify-content: center;
+    display: flex;
+}
+
+#nav-img-1{
+    /*margin icon links*/
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#nav-img-2{
+    /*margin icon links*/
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#nav-img-3{
+    /*margin icon links*/
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#nav-img-4{
+    /*margin icon links*/
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.copyright-text{
+    /*copyright text footer*/
+    justify-content: center;
+    display: flex;
+}
+
+.navbar-brand-footer{
+    /*footer external links*/
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
