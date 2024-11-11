@@ -90,12 +90,13 @@ section a{
     color: #555;
 }
 .input-submit{
+    padding-top: 30px;
     position: relative;
 }
 .submit-btn{
     width: 100%;
     height: 60px;
-    background: #222;
+    background: #555454;
     border: none;
     border-radius: 30px;
     cursor: pointer;
@@ -130,4 +131,8 @@ section a{
 #sign-up-link{
     /* padding link*/
     padding-top: 10px;
+}
+#main 
+{ /* padding to header Sign up*/
+    padding-bottom: 30px;
 }

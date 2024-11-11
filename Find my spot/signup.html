@@ -12,56 +12,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
     </head>
     <body>
-
+      <div class="login-form" id="roboto-regular">
+        <!-- Header -->
         <div id="container">
-            <header id="main">
-                <nav class="navbar bg-body-tertiary">
-                    <div class="container-fluid">
-                      <a class="navbar-brand" href="index.html">
-                        <h1 id="main-text"> Find my Spot </h1>
-                      </a>
-                    </div>
-                  </nav>
-            </header>           
-        </div>
-        <form class="row g-3">
-          <div class="row g-3">
-            <div class="col-md-6">
-            <div class="col-md-6">
-              <label for="exampleFormControlInput1" class="form-label">First name</label>
-              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-            </div>
-            <br>
-            <div class="col-md-6">
-              <label for="exampleFormControlInput1" class="form-label">Last name</label>
-              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-            </div>
-            <br>    
-            <div class="col-md-6">
-              <label for="exampleFormControlInput1" class="form-label">Username</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Username"/>
-            </div>
-            <br>
-            <div class="col-md-6">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email"/>
-          </div>
-          <br>
-          <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Password</label>
-            <input type="password" class="form-control" id="inputPassword4" placeholder="Password"/>
-          </div>
-          <br>
-          <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Confirm Password</label>
-            <input type="password" class="form-control" id="cpwd" placeholder="Confirm Password"/>
-          </div>
-          <br>
-          <div class="col-auto">
-            <button type="submit" class="btn btn-dark">Submit</button>
-          </div>
-        </div>
-        </div>
-        </form>
-</body>
+          <header id="main">
+                    <a class="navbar-brand" href="index.html">
+                      <h1 id="main-text"> Find my Spot </h1>
+                    </a>
+                  </div>
+                </nav>
+          </header> 
+        <div id="login-header">
+          <header id="main-txt"> <h2 id="main-text"> Sign up </h2></header>
+      </div>
+      <div class="text-box">
+        <!-- First name -->
+        <input type="text" class="input-field" id="input-box" placeholder="First name" autocomplete="off" required/>
+    </div>
+    <div class="text-box">
+      <!-- Last name -->
+      <input type="text" class="input-field" id="input-box" placeholder="Last name" autocomplete="off" required/>
+  </div>
+      <div class="text-box">
+          <!-- Email -->
+          <input type="text" class="input-field" id="input-box" placeholder="Email" autocomplete="off" required/>
+      </div>
+      <div class="text-box">
+          <!-- Password -->
+          <input type="password" class="input-field" id="pwd" placeholder="Password" autocomplete="off" required/>
+      </div>
+      <div class="text-box">
+        <!-- Confirm Password -->
+        <input type="password" class="input-field" id="cpwd" placeholder="Confirm Password" autocomplete="off" required/>
+    </div>
+      <!-- Login btn-->
+      <div class="input-submit">
+          <button class="submit-btn" id="submit"> Sign up </button> 
+      </div>
+      <div class="sign-up" id="sign-up-link"> 
+          <!-- Sign up ref-->
+      <p> Already have an Account? <a href="login.html"> Login</a> </p>
+      </div>
+      </div>
+  </body>
 </html>
