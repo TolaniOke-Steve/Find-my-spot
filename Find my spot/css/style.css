@@ -242,3 +242,51 @@ section a{
     justify-content: center;
     width: 100%;
 }
+
+.btn-dark{
+    /* cards button */
+    width: 50%;
+    height: 50px;
+    background: #555454;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.see-more{
+    /* see more button carousel*/
+    height: 30px;
+    width: 10%;
+    mix-blend-mode: multiply;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s; 
+}
+.see-more:hover{
+    background: #313030;
+    transform: scale(1.05,1);
+}
+
+.carousel{
+    /* carousel */ 
+    margin-top: 1px;
+    height: 530px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel .list{
+    position: absolute;
+    width: 800px;
+    max-width: 90%;
+    height: 80%;
+    left: 50%;
+    transform: translateX(-39%);
+}
+
+.carousel .list .item{
+    position: absolute;
+}

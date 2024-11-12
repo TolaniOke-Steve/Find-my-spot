@@ -2,7 +2,7 @@
 
 2) css to adjust cards ->
 
-3) make login page pop (with index blurred behind) up not a whole new page , signup.php -> changed to different pages
+3) make login page pop (with index blurred behind) up not a whole new page , signup.php -> changed to different pages ->
 
 div.
 
@@ -12,4 +12,4 @@ div.
 
 6) splits -> for account (singip/ signin)
 
-swiper used for cards and carousel
+7) limit input on discover more cards to 17 words
