@@ -13,3 +13,5 @@ div.
 6) splits -> for account (singip/ signin)
 
 7) limit input on discover more cards to 17 words
+
+8) IMPORTANT FIX CAROUSEL CARDS
