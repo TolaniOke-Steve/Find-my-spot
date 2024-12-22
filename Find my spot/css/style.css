@@ -275,7 +275,8 @@ section a{
     margin-top: 1px;
     height: 530px;
     overflow: hidden;
-    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .carousel .list{
@@ -286,7 +287,12 @@ section a{
     left: 50%;
     transform: translateX(-39%);
 }
-
+.title{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 /*.carousel .list .item{
     
 }*/
