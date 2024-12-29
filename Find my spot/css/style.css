@@ -280,14 +280,14 @@ section a{
 }
 
 .carousel .list{
-    position: absolute;
-    width: 800px;
-    max-width: 90%;
-    height: 80%;
-    left: 50%;
-    transform: translateX(-39%);
+    position: relative;
+    width: 1000px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 .title{
+    /* Discover header*/
     display:flex;
     justify-content: center;
     align-items: center;
