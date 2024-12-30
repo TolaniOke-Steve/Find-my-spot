@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+      "lib": ["dom", "es6"], // Includes DOM library
+      "strict": true,        // Recommended for type safety
+        "noImplicitAny": true, // Recommended for type safety
+    }
+  }
+  

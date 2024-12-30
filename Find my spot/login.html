@@ -13,6 +13,7 @@
     </head>
 
     <body>
+        <form action="">
         <div class="login-form" id="roboto-regular">
         <!-- Header -->
         <div id="login-header">
@@ -21,13 +22,16 @@
         <div class="text-box">
             <!-- Email -->
             <!--<label for="email-input"> Email: </label> -->
-            <input type="text" class="input-field" id="input-box" placeholder="Email" autocomplete="off" required/>
+            <input type="text" class="input-field" id="email" placeholder="Email" autocomplete="off" required/>
+            <p class="invalid" id="hid"> Please enter a valid email</p>
         </div>
         <div class="text-box">
             <!-- Password -->
             <!--<label for="password-input"> Password: </label> -->
             <input type="password" class="input-field" id="pwd" placeholder="Password" autocomplete="off" required/>
+            <p class="invalid" id="hid"> Incorrect password</p>
         </div>
+    </form>
         <div class="forgot">
             <section>
                 <!-- Remeber me checkbox -->
@@ -48,5 +52,8 @@
         <p> Don't have an Account? <a href="signup.html"> Sign up</a> </p>
         </div>
         </div>
+        <!-- Script TS -->
+        <script src="src/script.ts"></script>
+        <sript src="js/script.js"></sript>
     </body>
 </html>

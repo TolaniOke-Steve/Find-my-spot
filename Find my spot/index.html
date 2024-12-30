@@ -27,6 +27,14 @@
         <div class="navbar-tools">
           <!-- left nav-->
           <div class="navbar-right" id="nav-left">
+            <div class="nav-item">
+              <a class="nav-link" href="login.html" data-bs-toggle="popover"  data-bs-content="Account" data-bs-placement="top">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                </svg>
+              </a>
+            </div>
+          
             <a class="nav-link active" id="Trending" aria-current="page" href="#">Trending</a>
           <a class="nav-link active" id="Spots" href="#">My spots</a>
           <a class="nav-link active" id="Highlights" aria-current="page" href="#">Highlights</a>
@@ -60,25 +68,36 @@
           </div>
           <br>
           <!-- carousel div -->
+          <div class="title"> <h5>Discover</h5> </div>
           <div class="carousel">
             <div class="list">
-              <div class="title"> <h5>Discover</h5> </div>
-              <div class="item">
-                <img src="images/t3.jpg" />
-                <div class="intro">
-                  <div class="des">
-                    Places to go
+              <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/t1.jpg" class="d-block w-100" alt="...">
                   </div>
-                  <button class="see-more"> see more</button>
+                  <div class="carousel-item">
+                    <img src="images/t2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/t3.jpg" class="d-block w-100" alt="...">
+                  </div>
                 </div>
-              </div>
-              <div class="arrows">
-                <div class="next"></div>
-                <div class="back"></div>
-                <div class="previous">  </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
             </div>
           </div>
+          <br>
+         <h7> <p class="des-text"> Embark on a journey through diverse destinations, each offering unforgettable memories.</p></h7>
+          <a href="#" class="btn-see" role="button" id="btn-see" data-bs-toggle="button"> see more </a>
+          <br>
           <br>
           <div id="discover ">
             <h5 id="card-text"> Top picks for you </h5>
@@ -138,7 +157,7 @@
       </div>
       <!-- Linking SwiperJs script-->
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      <!-- Script JS-->
-       <script src="js/script.js"></script>
+      <!-- TS -->
+       <script src="src/handlers.ts"></script>
     </body>  
 </html>

@@ -254,45 +254,50 @@ section a{
     transition: .3s;
 }
 
-.see-more{
-    /* see more button carousel*/
-    height: 30px;
-    width: 10%;
-    mix-blend-mode: multiply;
-    color: #ffffff;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .3s; 
+.btn-see{
+    /* btn for discover */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #222;
 }
-.see-more:hover{
-    background: #313030;
+.btn-see:hover{
+    color: rgb(58, 150, 8);
     transform: scale(1.05,1);
 }
 
 .carousel{
     /* carousel */ 
     margin-top: 1px;
-    height: 530px;
+    height: 300px;
     overflow: hidden;
     display: flex;
     justify-content: center;
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
 }
 
+.des-text{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 .carousel .list{
-    position: absolute;
-    width: 800px;
-    max-width: 90%;
-    height: 80%;
-    left: 50%;
-    transform: translateX(-39%);
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 10px 1px rgba(0,0,0, 0.05);
 }
 .title{
+    /* Discover header*/
     display:flex;
     justify-content: center;
     align-items: center;
     
 }
-/*.carousel .list .item{
-    
-}*/
+.nav-item{
+    /* Account icon */
+    margin-right: 15px;
+}
