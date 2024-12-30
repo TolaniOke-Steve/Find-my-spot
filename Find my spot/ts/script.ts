@@ -1,5 +1,8 @@
-// Function login
 
+
+
+
+// Function login
 let flag: any = false;
 
 function handleLogin(event: Event) {
@@ -8,6 +11,7 @@ function handleLogin(event: Event) {
     const email = (document.getElementById('email') as HTMLInputElement).value;
     const pwd = (document.getElementById('pwd') as HTMLInputElement).value;
 
+    if (email == )
     console.log(`Logging in with email: ${email} and password: ${pwd}`);
 }
 
