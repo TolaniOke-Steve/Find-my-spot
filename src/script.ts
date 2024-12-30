@@ -11,7 +11,7 @@ function handleLogin(event: Event) {
     const email = (document.getElementById('email') as HTMLInputElement).value;
     const pwd = (document.getElementById('pwd') as HTMLInputElement).value;
 
-    if (email == )
+    //if (email == )
     console.log(`Logging in with email: ${email} and password: ${pwd}`);
 }
 
