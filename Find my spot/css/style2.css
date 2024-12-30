@@ -136,3 +136,15 @@ section a{
 { /* padding to header Sign up*/
     padding-bottom: 30px;
 }
+#hid{
+    /* hidden error text*/
+    display: none;
+}
+.invalid{
+    /* invalid error text*/
+    display: block;
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}

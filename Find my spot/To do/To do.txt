@@ -8,12 +8,14 @@ div.
 
 4) readjust index page name up top and nav under w box
 
-5) start typr script controls
+5) start type script controls
 
 6) splits -> for account (singip/ signin)
 
 7) limit input on discover more cards to 17 words
 
-8) IMPORTANT FIX CAROUSEL CARDS
+8) IMPORTANT FIX CAROUSEL CARDS ->
 
 9) Reset password done > ts backend < to do!
+
+10) if else form controls

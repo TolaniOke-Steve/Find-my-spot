@@ -1,4 +1,7 @@
 // Function login
+
+let flag: any = false;
+
 function handleLogin(event: Event) {
     event.preventDefault();
     
