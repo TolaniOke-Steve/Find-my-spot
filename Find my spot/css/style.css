@@ -297,6 +297,7 @@ section a{
     align-items: center;
     
 }
-/*.carousel .list .item{
-    
-}*/
+.nav-item{
+    /* Account icon */
+    margin-right: 15px;
+}
