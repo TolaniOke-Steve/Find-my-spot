@@ -1,64 +1,43 @@
-import express, { Request, Response } from 'express';
-import path from 'path';
-import axios from 'axios';
+// form validation
+document.addEventListener('DOMContentLoaded', () => {
+  const login = document.getElementById('login-form') as HTMLFormElement;
+  const emailInput = document.getElementById('email') as HTMLInputElement;
+  const passwordInput = document.getElementById('pwd') as HTMLInputElement;
+  const emailError = document.getElementById('hid')!;
+  const passwordError = document.getElementById('hid')!;
 
-const app = express();
-const port = 3000;
+  // error messages hidden
+  emailError.style.display = 'none';
+  passwordError.style.display = 'none';
 
-app.use(express.static(path.join(__dirname)));
-
-app.use('/css', express.static(path.join(__dirname, '../css')));
-app.use('/images', express.static(path.join(__dirname, '../images')));
-app.use('/src', express.static(path.join(__dirname, '../src')));
-
-// error handling 
-app.use((req, res) => {
-  res.status(404).send('Page not found');
-});
-
-// starting server on port 3000
-app.listen(3000, () => {
-  console.log(`Server is running on http://localhost:${port}`);
-});
-
-// index.html on root 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../index.html'));
-});
-
-// login.html on login route 
-app.get("/login", (req, res) => {
-res.sendFile(path.join(__dirname, '../login.html'));
-});
-
-
-
-
-
-// Function login
-let flag: any = false;
-
-function handleLogin(event: Event) {
+  // login null check
+  login?.addEventListener('submit', (event: Event) => {
     event.preventDefault();
-    
-    const email = (document.getElementById('email') as HTMLInputElement).value;
-    const pwd = (document.getElementById('pwd') as HTMLInputElement).value;
 
-    //if (email == )
-    console.log(`Logging in with email: ${email} and password: ${pwd}`);
-}
+    // Reset previous error messages
+    emailError.style.display = 'none';
+    passwordError.style.display = 'none';
 
-// Function signup
-function handleSignup(event: Event) {
-    event.preventDefault();
-    
-    const username = (document.getElementById('signup-username') as HTMLInputElement).value;
-    const email = (document.getElementById('signup-email') as HTMLInputElement).value;
-    const password = (document.getElementById('signup-password') as HTMLInputElement).value;
+    const email = emailInput.value;
+    const password = passwordInput.value;
 
-    console.log(`Signing up with username: ${username}, email: ${email} and password: ${password}`);
-}
+    let valid = true;
 
-//event listeners
-document.getElementById('login-form')?.addEventListener('submit', handleLogin);
-document.getElementById('signup-form')?.addEventListener('submit', handleSignup);
+    // Validate email
+    if (!email || !/\S+@\S+\.\S+/.test(email)) {
+      emailError.style.display = 'block'; 
+      valid = false;
+    }
+
+    // Validate password
+    if (!password) {
+      passwordError.style.display = 'block'; 
+      valid = false;
+    }
+  
+    if (valid) {
+      // Form submission (AJAX or proceed to server)
+      login.submit();
+    }
+  });
+});
