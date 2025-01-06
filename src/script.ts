@@ -1,30 +1,32 @@
-const express = require('express');
-const path = require('path');
-const app = express();
+import express, { Request, Response } from 'express';
+import path from 'path';
 
+const app = express();
 const port = 3000;
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname)));
 
+app.use('/css', express.static(path.join(__dirname, '../css')));
+app.use('/images', express.static(path.join(__dirname, '../images')));
+app.use('/src', express.static(path.join(__dirname, '../src')));
+
+// index.html on root 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.sendFile(path.join(__dirname, '../index.html'));
   });
 
-  app.listen(3000, () => {
-    console.log('Server is running on http://localhost:3000');
-  });
+// login.html on login route 
+app.get('/login', (req, res) => {
+  res.sendFile(path.join(__dirname, '../login.html'));
+});
 
-  interface Request {
-    // Define the properties you need from the request object
-  }
+// starting server on port 3000
+app.listen(3000, () => {
+  console.log(`Server is running on http://localhost:${port}`);
+});
 
-  interface Response {
-    sendFile: (path: string) => void;
-  }
 
-  app.get("/", (req: Request, res: Response) => {
-    res.sendFile(__dirname + "/login.html");
-  });
+
 // Function login
 let flag: any = false;
 
