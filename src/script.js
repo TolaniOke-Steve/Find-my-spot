@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // error messages hidden
     emailError.style.display = 'none';
     passwordError.style.display = 'none';
+    // login null check
     login === null || login === void 0 ? void 0 : login.addEventListener('submit', (event) => {
         event.preventDefault();
         // Reset previous error messages

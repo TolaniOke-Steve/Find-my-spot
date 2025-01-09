@@ -18,4 +18,6 @@ div.
 
 9) Reset password done > ts backend < to do!
 
-10) if else form controls
+10) if else form controls  , login validations ensure css elements appear correctly
+
+11) For my spots add new file option and display all spots uploaded
