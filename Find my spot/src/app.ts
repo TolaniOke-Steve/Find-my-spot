@@ -1,6 +1,6 @@
 import * as dotenv from 'dotenv';
 dotenv.config();
-import express = require('express');
+import express from 'express';
 //import session = require('express-session');
 
 declare module 'express-session' {
@@ -8,8 +8,7 @@ declare module 'express-session' {
     passport: { user: string };
   }
 }
-import path = require('path');
-
+import * as path from 'path';
 import axios from 'axios';
 
 const mongoose = require( "mongoose" );

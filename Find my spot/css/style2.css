@@ -10,11 +10,6 @@
     font-style: normal;
     font-variation-settings: "YEAR" 1979*/
 }
-.roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
 
 body{
     /* body */
@@ -32,11 +27,14 @@ body{
     width: 440px;
     height: 480px;
     padding: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 #main-text{
     text-align: center;
 }
-.login-header{
+#login-header{
     text-align: center;
     margin: 20px 0 40px 0;
 }
@@ -144,4 +142,19 @@ section a{
     font-size: 14px;
     margin-top: -10px;
     margin-bottom: 10px;
+}
+@media (max-width: 480px) {
+   /* small screens */
+    .signup-form {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* small screens */
+    .login-form {
+        width: 100%;
+        padding: 15px;
+    }
 }
