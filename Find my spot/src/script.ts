@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const login = document.getElementById('login-form') as HTMLFormElement;
   const emailInput = document.getElementById('email') as HTMLInputElement;
   const passwordInput = document.getElementById('pwd') as HTMLInputElement;
-  const emailError = document.getElementById('hid')!;
-  const passwordError = document.getElementById('hid')!;
+  const emailError = document.getElementById('email-error')!;
+  const passwordError = document.getElementById('pwd-error')!;
 
   // error messages hidden
   emailError.style.display = 'none';
