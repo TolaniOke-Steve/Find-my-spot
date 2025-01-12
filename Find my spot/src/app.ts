@@ -1,7 +1,15 @@
-import dotenv from 'dotenv';
+import * as dotenv from 'dotenv';
 dotenv.config();
-import express, { Request, Response } from 'express';
-import path from 'path';
+import express = require('express');
+//import session = require('express-session');
+
+declare module 'express-session' {
+  interface SessionData {
+    passport: { user: string };
+  }
+}
+import path = require('path');
+
 import axios from 'axios';
 
 const mongoose = require( "mongoose" );
