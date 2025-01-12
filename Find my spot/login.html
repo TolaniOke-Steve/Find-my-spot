@@ -13,8 +13,8 @@
     </head>
 
     <body>
-        <form action="/login" method="post">
-            
+        <form action="/login" method="post" id="login-form">
+
         <div class="login-form" id="roboto-regular">
         <!-- Header -->
         <div id="login-header">
@@ -23,13 +23,13 @@
         <div class="text-box">
             <!-- Email -->
             <!--<label for="email-input"> Email: </label> -->
-            <input type="text" class="input-field" id="email" placeholder="Email" autocomplete="off" required/>
+            <input type="text" class="input-field" id="email"  name="email" placeholder="Email" autocomplete="off" required/>
             <p class="invalid" id="email-error"> Please enter a valid email</p>
         </div>
         <div class="text-box">
             <!-- Password -->
             <!--<label for="password-input"> Password: </label> -->
-            <input type="password" class="input-field" id="pwd" placeholder="Password" autocomplete="off" required/>
+            <input type="password" class="input-field" id="pwd" name="password" placeholder="Password" autocomplete="off" required/>
             <p class="invalid" id="pwd-error"> Incorrect password</p>
         </div>
         <div class="forgot">

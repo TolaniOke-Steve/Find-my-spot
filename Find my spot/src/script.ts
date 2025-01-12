@@ -12,7 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // login null check
   login?.addEventListener('submit', (event: Event) => {
-    event.preventDefault();
+    //event.preventDefault();
+    login?.submit();
 
     // Reset previous error messages
     emailError.style.display = 'none';
