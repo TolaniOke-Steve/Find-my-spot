@@ -14,7 +14,7 @@
     <body>
 
       <form action="/register" method="post" id="signup-form">
-      <div class="login-form" id="roboto-regular">
+      <div class="signup-form" id="roboto-regular">
         <!-- Header -->
         <div id="container">
           <header id="main">
@@ -30,22 +30,27 @@
       <div class="text-box">
         <!-- First name -->
         <input type="text" class="input-field" id="input-box" placeholder="First name" autocomplete="off" required/>
+        <p class="invalid" id="firstname-error"> Incorrect input</p>
     </div>
     <div class="text-box">
       <!-- Last name -->
       <input type="text" class="input-field" id="input-box" placeholder="Last name" autocomplete="off" required/>
+      <p class="invalid" id="lastname-error"> Incorrect input</p>
   </div>
       <div class="text-box">
           <!-- Email -->
           <input type="text" class="input-field" id="input-box" placeholder="Email" autocomplete="off" required/>
+          <p class="invalid" id="email-error"> Incorrect email</p>
       </div>
       <div class="text-box">
           <!-- Password -->
           <input type="password" class="input-field" id="pwd" placeholder="Password" autocomplete="off" required/>
+          <p class="invalid" id="pwd-error"> Incorrect password</p>
       </div>
       <div class="text-box">
         <!-- Confirm Password -->
         <input type="password" class="input-field" id="cpwd" placeholder="Confirm Password" autocomplete="off" required/>
+        <p class="invalid" id="cpwd-error"> Password dosent mantch</p>
     </div>
       <!-- Login btn-->
       <div class="input-submit">
