@@ -1,18 +1,18 @@
 // form validation
 document.addEventListener('DOMContentLoaded', () => {
   const login = document.getElementById('login-form') as HTMLFormElement;
-  const signup = document.getElementById('signup-form)') as HTMLFormElement;
+  const signup = document.getElementById('signup-form') as HTMLFormElement;
   const emailInput = document.getElementById('email') as HTMLInputElement;
   const passwordInput = document.getElementById('pwd') as HTMLInputElement;
-  const Firstname = document.getElementById('input-box') as HTMLInputElement;
-  const Lastname = document.getElementById('input-box') as HTMLInputElement;
+  const Firstname = document.getElementById('firstname') as HTMLInputElement;
+  const Lastname = document.getElementById('lastname') as HTMLInputElement;
   const ConfirmPassword = document.getElementById('cpwd') as HTMLInputElement;
 
   const emailError = document.getElementById('email-error')!;
   const passwordError = document.getElementById('pwd-error')!;
   const FirstnameError = document.getElementById('firstname-error')!;
   const LastnameError = document.getElementById('lastname-error')!;
-  const ConfirmPasswordError = document.getElementById('cpws-error')!;
+  const ConfirmPasswordError = document.getElementById('cpwd-error')!;
 
   // error messages hidden
   emailError.style.display = 'none';
@@ -74,4 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
       login.submit();
     }
   });
+
+  
 });
