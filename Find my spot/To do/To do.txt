@@ -10,7 +10,7 @@ div.
 
 5) start type script controls
 
-6) splits -> for account (singip/ signin)
+6) splits -> for account (singup/ signin)
 
 7) limit input on discover more cards to 17 words
 
