@@ -1,77 +1,132 @@
-// form validation
 document.addEventListener('DOMContentLoaded', () => {
-  const login = document.getElementById('login-form') as HTMLFormElement;
-  const signup = document.getElementById('signup-form)') as HTMLFormElement;
+  const signupForm = document.getElementById('signup-form') as HTMLFormElement | null;
+  const loginForm = document.getElementById('login-form') as HTMLFormElement | null;
+
+  if (signupForm) {
+    handleSignupForm(signupForm);
+  }
+
+  if (loginForm) {
+    handleLoginForm(loginForm);
+  }
+});
+
+// signup  validation
+function handleSignupForm(form: HTMLFormElement) {
   const emailInput = document.getElementById('email') as HTMLInputElement;
   const passwordInput = document.getElementById('pwd') as HTMLInputElement;
-  const Firstname = document.getElementById('input-box') as HTMLInputElement;
-  const Lastname = document.getElementById('input-box') as HTMLInputElement;
-  const ConfirmPassword = document.getElementById('cpwd') as HTMLInputElement;
+  const firstNameInput = document.getElementById('firstname') as HTMLInputElement;
+  const lastNameInput = document.getElementById('lastname') as HTMLInputElement;
+  const confirmPasswordInput = document.getElementById('cpwd') as HTMLInputElement;
 
   const emailError = document.getElementById('email-error')!;
   const passwordError = document.getElementById('pwd-error')!;
-  const FirstnameError = document.getElementById('firstname-error')!;
-  const LastnameError = document.getElementById('lastname-error')!;
-  const ConfirmPasswordError = document.getElementById('cpws-error')!;
+  const firstNameError = document.getElementById('firstname-error')!;
+  const lastNameError = document.getElementById('lastname-error')!;
+  const confirmPasswordError = document.getElementById('cpwd-error')!;
 
-  // error messages hidden
-  emailError.style.display = 'none';
-  passwordError.style.display = 'none';
-  FirstnameError.style.display = 'none';
-  LastnameError.style.display = 'none';
-  ConfirmPasswordError.style.display = 'none';
+  // Hide error messages initially
+  [emailError, passwordError, firstNameError, lastNameError, confirmPasswordError].forEach((el) => {
+    el.style.display = 'none';
+  });
 
-  // login null check
-  login?.addEventListener('submit', (event: Event) => {
+  form.addEventListener('submit', (event: Event) => {
     event.preventDefault();
 
-    // Reset previous error messages
-    emailError.style.display = 'none';
-    passwordError.style.display = 'none';
-    FirstnameError.style.display = 'none';
-    LastnameError.style.display = 'none';
-    ConfirmPasswordError.style.display = 'none';
+    // Reset error messages
+    [emailError, passwordError, firstNameError, lastNameError, confirmPasswordError].forEach((el) => {
+      el.style.display = 'none';
+    });
 
-    const email = emailInput.value;
-    const password = passwordInput.value;
-    const fname = Firstname.value;
-    const lname = Lastname.value;
-    const cpwd = ConfirmPassword.value;
+    const email = emailInput.value.trim();
+    const password = passwordInput.value.trim();
+    const firstName = firstNameInput.value.trim();
+    const lastName = lastNameInput.value.trim();
+    const confirmPassword = confirmPasswordInput.value.trim();
 
-    const pwd = /^[a-zA-Z0-9!@#$%^&*(),.?":{}|<>-_=+[\]\\;/'`~]*$/;
+    const pwdRegex = /^[a-zA-Z0-9!@#$%^&*(),.?":{}|<>-_=+[\]\\;/'`~]*$/;
 
     let valid = true;
 
     // Validate email
     if (!email || !/\S+@\S+\.\S+/.test(email)) {
-      emailError.style.display = 'block'; 
+      emailError.style.display = 'block';
       valid = false;
     }
 
     // Validate password
-    if (!pwd.test(password)) {
-      passwordError.style.display = 'block'; 
-      valid = false;
-    }
-  
-    if (!fname){
-      FirstnameError.style.display ='block';
+    if (!pwdRegex.test(password)) {
+      passwordError.style.display = 'block';
       valid = false;
     }
 
-    if (!lname){
-      LastnameError.style.display ='block';
+    // Validate first name
+    if (!firstName) {
+      firstNameError.style.display = 'block';
       valid = false;
     }
 
-    if (password !== cpwd) {
-      ConfirmPasswordError.style.display = 'block'; 
+    // Validate last name
+    if (!lastName) {
+      lastNameError.style.display = 'block';
+      valid = false;
+    }
+
+    // Confirm passwords match
+    if (password !== confirmPassword) {
+      confirmPasswordError.style.display = 'block';
       valid = false;
     }
 
     if (valid) {
-      // Form submission (AJAX or proceed to server)
-      login.submit();
+      // Submit the form
+      form.submit();
     }
   });
-});
+}
+
+// login validaton
+
+function handleLoginForm(form: HTMLFormElement) {
+  const emailInput = document.getElementById('email') as HTMLInputElement;
+  const passwordInput = document.getElementById('pwd') as HTMLInputElement;
+
+  const emailError = document.getElementById('email-error')!;
+  const passwordError = document.getElementById('pwd-error')!;
+
+  // Hide error messages initially
+  [emailError, passwordError].forEach((el) => {
+    el.style.display = 'none';
+  });
+
+  form.addEventListener('submit', (event: Event) => {
+    event.preventDefault();
+
+    // Reset error messages
+    [emailError, passwordError].forEach((el) => {
+      el.style.display = 'none';
+    });
+
+    const email = emailInput.value.trim();
+    const password = passwordInput.value.trim();
+
+    let valid = true;
+
+    // Validate email
+    if (!email || !/\S+@\S+\.\S+/.test(email)) {
+      emailError.style.display = 'block';
+      valid = false;
+    }
+
+    // Validate password
+    if (!password) {
+      passwordError.style.display = 'block';
+      valid = false;
+    }
+
+    if (valid) {
+      // Submit the form
+      form.submit();
+    }
+  });
+}
